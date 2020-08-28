@@ -11,6 +11,18 @@ public class Book {
     private String authorName;
     private String isbnNumber;
 
+    public Book() {
+        this.bookName = "Gulliver Travels";
+        this.authorName = "Jonanthan Swift";
+        this.isbnNumber = "tetd6246375";
+    }
+
+    public Book(String bookName, String authorName) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.isbnNumber = "tetd6246375";
+    }
+
     public String getBookName() {
         return bookName;
     }
