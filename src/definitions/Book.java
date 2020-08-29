@@ -50,7 +50,11 @@ public class Book {
     }
 
     public void doHireBook() {
-        System.out.println("Thank you for hiring.");
+        System.out.println("Thank you for hiring book.");
+    }
+
+    public void doReturnBook() {
+        System.out.println("Thank you for returning book.");
     }
 
     @Override
