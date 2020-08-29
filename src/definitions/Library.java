@@ -13,6 +13,9 @@ public class Library {
 
     public Library() {
         this.store = new Book[10];
+        for (int i = 0; i < store.length; i++) {
+            store[i] = new Book("Book " + (i + 1));
+        }
     }
 
     public Book[] getStore() {

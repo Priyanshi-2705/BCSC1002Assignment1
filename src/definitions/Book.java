@@ -19,9 +19,9 @@ public class Book {
         this.isbnNumber = "tetd6246375";
     }
 
-    public Book(String bookName, String authorName) {
+    public Book(String bookName) {
         this.bookName = bookName;
-        this.authorName = authorName;
+        this.authorName = "ABC";
         this.isbnNumber = "tetd6246375";
     }
 
