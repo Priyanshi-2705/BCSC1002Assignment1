@@ -40,4 +40,10 @@ public class Library {
     public int hashCode() {
         return Arrays.hashCode(getStore());
     }
+
+    public void addBook(String bookName) {
+        System.out.println(bookName + " is added to the Library");
+    }
+
+
 }
