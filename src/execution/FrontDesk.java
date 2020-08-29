@@ -11,10 +11,8 @@ import definitions.Book;
 public class FrontDesk {
     public static void main(String[] args) {
         Book book = new Book("The Story of my Life", "Helen Keller");
-        System.out.println(
-                "Book Name: " + book.getBookName() + ", " +
-                        "Author Name: " + book.getAuthorName() + ", " +
-                        "ISBN Number: " + book.getIsbnNumber() + "."
-        );
+        Book book1 = new Book("Gulliver Travels", "Jonanthan Swift");
+        System.out.println(book.hashCode());
+        System.out.println(book1.hashCode());
     }
 }
