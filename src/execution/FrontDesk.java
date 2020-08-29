@@ -11,7 +11,7 @@ import definitions.Book;
 public class FrontDesk {
     public static void main(String[] args) {
         Book book = new Book("The Story of my Life", "Helen Keller");
-        Book book1 = new Book("Gulliver Travels", "Jonanthan Swift");
+        Book book1 = new Book("Cantervilla Ghost", "Oliver Twist");
         System.out.println(book.hashCode());
         System.out.println(book1.hashCode());
     }

@@ -49,6 +49,11 @@ public class Book {
         this.isbnNumber = isbnNumber;
     }
 
+    public void doHireBook() {
+        System.out.println("Thank you for hiring.");
+    }
+
+    @Override
     public String toString() {
         return String.format(
                 "Book Name: %s, Author Name: %s, ISBN Number: %s",
