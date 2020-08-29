@@ -48,4 +48,8 @@ public class Library {
     public void doHireBook(String bookName) {
         System.out.println("Thank you for hiring \"" + bookName + "\"");
     }
+
+    public void doReturnBook(String bookName) {
+        System.out.println("Thank you for returning \"" + bookName + "\"");
+    }
 }
