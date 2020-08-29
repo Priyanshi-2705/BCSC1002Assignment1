@@ -52,4 +52,10 @@ public class Library {
     public void doReturnBook(String bookName) {
         System.out.println("Thank you for returning \"" + bookName + "\"");
     }
+
+    public void bookAvailable() {
+        for (Book book : this.store) {
+            System.out.println(book);
+        }
+    }
 }
