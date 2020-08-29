@@ -23,4 +23,17 @@ public class Library {
     public String toString() {
         return Arrays.toString(store);
     }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Library library = (Library) object;
+        return Arrays.equals(getStore(), library.getStore());
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getStore());
+    }
 }
