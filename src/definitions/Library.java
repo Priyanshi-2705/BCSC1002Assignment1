@@ -45,5 +45,7 @@ public class Library {
         System.out.println(bookName + " is added to the Library");
     }
 
-
+    public void doHireBook(String bookName) {
+        System.out.println("Thank you for hiring \"" + bookName + "\"");
+    }
 }
