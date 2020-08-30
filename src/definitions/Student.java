@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
     private String firstName;
     private String middleName;
@@ -76,12 +78,21 @@ public class Student {
         this.bookIssued = bookIssued;
     }
 
-    public Book[] getIssued() {
+    public Book[] getIssuedBookName() {
         return issuedBookName.clone();
     }
 
-    public void setIssued(Book[] issued) {
+    public void setIssuedBookName(Book[] issued) {
         this.issuedBookName = issued;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "firstName: %s, middleName: %s, lastName: %s, fullName: %s, uniRollNumber: %l, bookIssued: %i",
+                getFirstName(), getMiddleName(), getLastName(), getFullName(), getUniRollNumber(), getBookIssued(),
+                Arrays.toString(issuedBookName)
+        );
     }
 
 }
