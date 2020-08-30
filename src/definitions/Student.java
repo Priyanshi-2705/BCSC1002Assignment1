@@ -113,7 +113,7 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hash(getFirstName(), getMiddleName(), getLastName(), getFullName(), getUniRollNumber(), getBookIssued(),
-                Arrays.hashCode(getIssuedBookName()));
+                Arrays.hashCode(getIssuedBookName())
+        );
     }
-
 }
