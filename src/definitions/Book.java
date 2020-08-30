@@ -68,7 +68,8 @@ public class Book {
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
-        if (object == null || getClass() != object.getClass()) return false;
+        if (object == null || getClass() != object.getClass())
+            return false;
         Book book = (Book) object;
         return Objects.equals(getBookName(), book.getBookName()) &&
                 Objects.equals(getAuthorName(), book.getAuthorName()) &&

@@ -34,7 +34,8 @@ public class Library {
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
-        if (object == null || getClass() != object.getClass()) return false;
+        if (object == null || getClass() != object.getClass())
+            return false;
         Library library = (Library) object;
         return Arrays.equals(getStore(), library.getStore());
     }
